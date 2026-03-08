@@ -6,3 +6,4 @@ rec {
   #recでなければエラーになる
   three = two + one;
 }
+

@@ -6,4 +6,6 @@ let
       };
     };
   };
-in attrset.a.b.c
+in
+attrset.a.b.c
+

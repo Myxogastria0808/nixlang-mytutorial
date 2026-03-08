@@ -16,6 +16,8 @@ let
   a = "${./datafile}";
   #ディレクトリの場合は、ディレクトリ全体がNix Storeにコピーされる
   b = "${./.}";
-in {
+in
+{
   inherit a b;
 }
+

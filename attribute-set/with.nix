@@ -6,7 +6,13 @@ let
     y = 2;
     z = 3;
   };
-in with a; [ x y z ]
+in
+with a;
+[
+  x
+  y
+  z
+]
 #上記の式は、[ a.x a.y a.z ]と同様の意味
 
 #with式は1行のみ有効
@@ -21,3 +27,4 @@ in with a; [ x y z ]
 #   b = with a; [ x y z ];
 #   c = x;
 # }
+

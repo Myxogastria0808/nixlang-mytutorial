@@ -3,13 +3,15 @@
 nixファイルの実行
 
 ```sh
-nix-instantiate --eval --strict ~.nix
+nix eval --file ./hoge.nix
 ```
+
 REPL環境に入る
 
 ```sh
 nix repl
 ```
+
 ## builtins
 
 組み込み関数が用意されている
@@ -37,7 +39,7 @@ Nix言語は、引数を一つしか取れない
 ```nix
 let
   #カリー化せずに書いた場合
-  b = x: (y: x + y); 
+  b = x: (y: x + y);
   #カリー化した関数
   f = x: y: x + y;
 in f 1 2
@@ -48,11 +50,11 @@ in f 1 2
 ```typescript
 //通常の関数
 const add = (x: number, y: number): number => x + y;
-add(1, 2) // 3
+add(1, 2); // 3
 
 //カリー化した関数
 const curriedAdd = (x: number) => (y: number) => x + y;
-curriedAdd(1)(2) // 3
+curriedAdd(1)(2); // 3
 ```
 
 ## 参考サイト

@@ -7,7 +7,11 @@
   bool = true;
   null = null;
   #listはスペース区切り
-  list = [ 1 "two" false ];
+  list = [
+    1
+    "two"
+    false
+  ];
   attribute-set = {
     a = "hello";
     b = 2;
